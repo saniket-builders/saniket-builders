@@ -1,10 +1,10 @@
 // An array of links for navigation bar
 export const navBarLinks = [
   { name: "Home", url: "/" },
-  { name: "Technical Publications", url: "/technical-publications" },
-  { name: "Saniket Builders", url: "/saniket-builders" },
-  { name: "Champ Endurance", url: "/champ-endurance" },
-  { name: "Loha Foundation", url: "/loha-foundation" },
+  { name: "Technical Publications", url: "/saniketgroup.com/technical-publications" },
+  { name: "Saniket Builders", url: "/saniketgroup.com/saniket-builders" },
+  { name: "Champ Endurance", url: "/saniketgroup.com/champ-endurance" },
+  { name: "Loha Foundation", url: "/saniketgroup.com/loha-foundation" },
 
 ];
 // An array of links for footer
