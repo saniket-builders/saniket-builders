@@ -7,6 +7,7 @@ export default defineConfig({
   // https://docs.astro.build/en/guides/images/#authorizing-remote-images
   site: "https://saniket-builders.github.io",
   base: "saniketgroup.com",
+  publicDir: 'saniketgroup.com/public',
   image: {
     domains: ["images.unsplash.com"]
   },

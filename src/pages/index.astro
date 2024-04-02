@@ -7,28 +7,28 @@ import ClientsSection from "../components/sections/landing/ClientsSection.astro"
 import FeaturesGeneral from "../components/sections/features/FeaturesGeneral.astro";
 import FeaturesNavs from "../components/sections/features/FeaturesNavs.astro";
 import TestimonialsSection from "../components/sections/testimonials/TestimonialsSection.astro";
+import HeroSection from "../components/sections/landing/HeroSection.astro";
 ---
 
 <MainLayout title="Saniket Group">
 
-  <!--<HeroSection-->
-  <!--  title=`Welcome to <span-->
-  <!--      class="text-blue-500 dark:text-blue-400">Saniket Group</span>`-->
-  <!--  subTitle="Tag Line Here"-->
-  <!--  primaryBtn="Contact Us Today"-->
-  <!--  primaryBtnURL="/contact"-->
-  <!--  withReview={false}-->
-  <!--  avatars={avatarSrcs}-->
-  <!--  rating=`<span class="font-bold">4.8</span> / 5`-->
-  <!--  starCount={4}-->
-  <!--  reviews=`From Over <span class="font-bold">12.8k</span> Reviews`-->
-  <!--/>-->
-
-  <HeroSectionAlt
-    title="Welcome to Saniket Group"
-    subTitle="Commited to a better future"
-    url="/contact"
+  <HeroSection
+    title=`Welcome to <span
+        class="text-blue-500 dark:text-blue-400">Saniket Group</span>`
+    subTitle="Tag Line Here"
+    primaryBtn="Contact Us Today"
+    primaryBtnURL="/contact"
+    withReview={false}
+    rating=`<span class="font-bold">4.8</span> / 5`
+    starCount={4}
+    reviews=`From Over <span class="font-bold">12.8k</span> Reviews`
   />
+
+  <!--<HeroSectionAlt-->
+  <!--  title="Welcome to Saniket Group"-->
+  <!--  subTitle="Commited to a better future"-->
+  <!--  url="/contact"-->
+  <!--/>-->
 
   <FeaturesNavs />
 

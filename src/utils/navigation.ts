@@ -1,9 +1,9 @@
 // An array of links for navigation bar
 export const navBarLinks = [
   { name: "Home", url: "/saniketgroup.com/" },
-  { name: "Technical Publications", url: "/saniketgroup.com/technical-publications" },
+  { name: "Technical Publications", url: "https://technicalpublications.in/" },
   { name: "Saniket Builders", url: "/saniketgroup.com/saniket-builders" },
-  { name: "Champ Endurance", url: "/saniketgroup.com/champ-endurance" },
+  { name: "Champ Endurance", url: "https://champendurance.com/" },
   { name: "Loha Foundation", url: "/saniketgroup.com/loha-foundation" },
 
 ];
