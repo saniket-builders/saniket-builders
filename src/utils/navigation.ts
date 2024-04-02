@@ -1,6 +1,6 @@
 // An array of links for navigation bar
 export const navBarLinks = [
-  { name: "Home", url: "/" },
+  { name: "Home", url: "/saniketgroup.com/" },
   { name: "Technical Publications", url: "/saniketgroup.com/technical-publications" },
   { name: "Saniket Builders", url: "/saniketgroup.com/saniket-builders" },
   { name: "Champ Endurance", url: "/saniketgroup.com/champ-endurance" },
