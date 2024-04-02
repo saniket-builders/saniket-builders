@@ -1,5 +1,6 @@
 ---
 // Import the necessary components
+// TODO: Add Directors new section
 import MainLayout from "../layouts/MainLayout.astro";
 import HeroSectionAlt from "../components/sections/landing/HeroSectionAlt.astro";
 import ClientsSection from "../components/sections/landing/ClientsSection.astro";
@@ -29,15 +30,17 @@ import TestimonialsSection from "../components/sections/testimonials/Testimonial
     url="/contact"
   />
 
+  <FeaturesNavs />
+
+
+  <FeaturesGeneral />
+
 
   <ClientsSection
     title="Trusted by Industry Leaders"
     subTitle="Experience the reliability chosen by industry giants."
   />
 
-  <FeaturesGeneral />
-
-  <FeaturesNavs />
 
   <TestimonialsSection
     title="State-of-the-Art"

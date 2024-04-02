@@ -64,6 +64,43 @@ const title: string = `<span class="text-blue-500 dark:text-blue-400">Saniket Gr
             >
           </TabNav>
 
+           <TabNav
+            id="tabs-with-card-item-3"
+            dataTab="#tabs-with-card-3"
+            aria="tabs-with-card-3"
+            heading="Champ Endurance"
+            content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          >
+            <svg
+              class="mt-2 h-6 w-6 flex-shrink-0 fill-neutral-700 hs-tab-active:fill-[#fa5a15] dark:fill-neutral-300 dark:hs-tab-active:fill-[#fb713b] md:h-7 md:w-7"
+              height="48"
+              viewBox="0 -960 960 960"
+              width="48"
+              ><path
+                d="M510-570v-270h330v270H510ZM120-450v-390h330v390H120Zm390 330v-390h330v390H510Zm-390 0v-270h330v270H120Zm60-390h210v-270H180v270Zm390 330h210v-270H570v270Zm0-450h210v-150H570v150ZM180-180h210v-150H180v150Zm210-330Zm180-120Zm0 180ZM390-330Z"
+              ></path></svg
+            >
+          </TabNav>
+
+           <TabNav
+            id="tabs-with-card-item-4"
+            dataTab="#tabs-with-card-4"
+            aria="tabs-with-card-4"
+            heading="Loha Foundation"
+            content="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+          >
+            <svg
+              class="mt-2 h-6 w-6 flex-shrink-0 fill-neutral-700 hs-tab-active:fill-[#fa5a15] dark:fill-neutral-300 dark:hs-tab-active:fill-[#fb713b] md:h-7 md:w-7"
+              height="48"
+              viewBox="0 -960 960 960"
+              width="48"
+              ><path
+                d="M510-570v-270h330v270H510ZM120-450v-390h330v390H120Zm390 330v-390h330v390H510Zm-390 0v-270h330v270H120Zm60-390h210v-270H180v270Zm390 330h210v-270H570v270Zm0-450h210v-150H570v150ZM180-180h210v-150H180v150Zm210-330Zm180-120Zm0 180ZM390-330Z"
+              ></path></svg
+            >
+          </TabNav>
+
+
           <!--<TabNav-->
           <!--  id="tabs-with-card-item-3"-->
           <!--  dataTab="#tabs-with-card-3"-->
@@ -106,12 +143,18 @@ const title: string = `<span class="text-blue-500 dark:text-blue-400">Saniket Gr
               alt="A screenshot or graphic representation of the intuitive dashboard"
               second={true}
             />
-            <!--<TabContent-->
-            <!--  id="tabs-with-card-3"-->
-            <!--  aria="tabs-with-card-item-3"-->
-            <!--  src={construction}-->
-            <!--  alt="Gray metal building frame near tower crane during daytime"-->
-            <!--/>-->
+            <TabContent
+              id="tabs-with-card-3"
+              aria="tabs-with-card-item-3"
+              src={construction}
+              alt="Gray metal building frame near tower crane during daytime"
+            />
+              <TabContent
+              id="tabs-with-card-4"
+              aria="tabs-with-card-item-4"
+              src={construction}
+              alt="Gray metal building frame near tower crane during daytime"
+            />
           </div>
         </div>
       </div>
@@ -129,3 +172,4 @@ const title: string = `<span class="text-blue-500 dark:text-blue-400">Saniket Gr
 <!--Import the necessary Tabs plugin-->
 <!--https://preline.co/plugins/html/tabs.html-->
 <script is:inline src="/scripts/vendor/preline/tabs/index.js"></script>
+
