@@ -3,7 +3,7 @@ export const navBarLinks = [
   { name: "Home", url: "/saniketgroup.com/" },
   { name: "Technical Publications", url: "https://technicalpublications.in/" },
   { name: "Saniket Builders", url: "/saniketgroup.com/saniket-builders" },
-  { name: "Champ Endurance", url: "https://champendurance.com/" },
+  { name: "Champ Endurance", url: "champendurance.com" },
   { name: "Loha Foundation", url: "/saniketgroup.com/loha-foundation" },
 
 ];
