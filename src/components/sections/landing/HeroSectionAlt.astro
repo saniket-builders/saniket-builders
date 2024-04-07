@@ -2,7 +2,10 @@
 // Import the necessary dependencies
 
 // Define props from Astro
+
+import { Image } from "astro:assets";
 const { title, subTitle, url } = Astro.props;
+import logo from "/public/logo_text_tag.svg";
 
 // Define TypeScript interface for props
 interface Props {
@@ -13,29 +16,25 @@ interface Props {
 ---
 
 <section
-  class="relative mx-auto max-w-[85rem] px-4 pb-24 pt-10 sm:px-6 lg:px-8"
+  class="relative h-screen bg-no-repeat bg-cover flex items-center justify-center text-white overflow-hidden rounded-xl"
 >
-  <!-- Decorating SVG elements -->
-  <div
-    class="absolute left-0 top-[55%] scale-90 md:top-[20%] xl:left-[10%] xl:top-[25%]"
-  >
+  <div class="z-10 text-center relative p-5 md:p-10 bg-white bg-opacity-90 rounded-xl shadow-lg max-w-lg mx-auto text-black">
+        <h1 class="mb-5 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">Welcome to</h1>
+
+    <Image src={logo} alt="Saniket Group" class="max-w-xs mx-auto md:max-w-sm lg:mx-w:md" width={500} height={300} />
   </div>
   <!-- Hero Section Heading -->
-  <div class="mx-auto mt-5 max-w-xl text-center">
-    <h2
-      class="block text-balance text-4xl font-bold leading-tight tracking-tight text-neutral-800 dark:text-neutral-200 md:text-5xl lg:text-6xl"
-    >
-      {title}
-    </h2>
-  </div>
+  <!--<div class="mx-auto mt-5 max-w-xl text-center">-->
+  <!--  <h2-->
+  <!--    class="block text-balance text-4xl font-bold leading-tight tracking-tight text-neutral-800 dark:text-neutral-200 md:text-5xl lg:text-6xl"-->
+  <!--  >-->
+  <!--    {title}-->
+  <!--  </h2>-->
+
+  <!--</div>-->
+  <!--<div class="mx-auto flex justify-center items-center mt-5 max-w-96">-->
+  <!--  <Image src={logo} alt="Saniket Group" class="h-auto max-w-96" />-->
+  <!--</div>-->
+
   <!-- Hero Section Sub-heading -->
-  <div class="mx-auto mt-5 max-w-3xl text-center">
-    {
-      subTitle && (
-        <p class="text-pretty text-lg text-neutral-600 dark:text-neutral-400">
-          {subTitle}
-        </p>
-      )
-    }
-  </div>
 </section>

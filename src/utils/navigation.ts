@@ -3,7 +3,7 @@ export const navBarLinks = [
   { name: "Home", url: "/saniketgroup.com/" },
   { name: "Technical Publications", url: "https://technicalpublications.in/" },
   { name: "Saniket Builders", url: "/saniketgroup.com/saniket-builders" },
-  { name: "Champ Endurance", url: "champendurance.com" },
+  { name: "Champ Endurance", url: "https://www.champendurance.com" },
   { name: "Loha Foundation", url: "/saniketgroup.com/loha-foundation" },
 
 ];
@@ -13,7 +13,7 @@ export const footerLinks = [
   {
     section: "Company",
     links: [
-      { name: "About us", url: "#" },
+      { name: "About Us", url: "#" },
       { name: "Blog", url: "#" },
       { name: "Careers", url: "#" },
       { name: "Customers", url: "#" },
