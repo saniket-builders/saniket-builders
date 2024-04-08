@@ -64,7 +64,7 @@ interface Props {
 </section>
 
 <script>
-  document.querySelector('.scroll-icon').addEventListener('click', () => {
+  document.querySelector('.scroll-icon')!.addEventListener('click', () => {
     window.scrollBy({
       top: window.innerHeight,
       behavior: 'smooth',
