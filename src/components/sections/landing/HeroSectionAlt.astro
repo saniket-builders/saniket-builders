@@ -22,7 +22,31 @@ interface Props {
         <h1 class="mb-5 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold">Welcome to</h1>
 
     <Image src={logo} alt="Saniket Group" class="max-w-xs mx-auto md:max-w-sm lg:mx-w:md" width={500} height={300} />
+
   </div>
+
+  <!-- Scroll Icon -->
+  <div class="absolute inset-x-0 bottom-32 flex justify-center scroll-icon">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      class="h-6 w-6 text-white animate-bounce"
+      fill="none"
+      viewBox="0 0 24 24"
+      stroke="currentColor"
+    >
+      <path
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        d="M19 14l-7 7m0 0l-7-7m7 7V3"
+      />
+    </svg>
+  </div>
+
+
+
+
+
   <!-- Hero Section Heading -->
   <!--<div class="mx-auto mt-5 max-w-xl text-center">-->
   <!--  <h2-->
@@ -38,3 +62,12 @@ interface Props {
 
   <!-- Hero Section Sub-heading -->
 </section>
+
+<script>
+  document.querySelector('.scroll-icon').addEventListener('click', () => {
+    window.scrollBy({
+      top: window.innerHeight,
+      behavior: 'smooth',
+    });
+  })
+</script>

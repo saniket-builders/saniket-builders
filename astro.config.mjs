@@ -8,7 +8,7 @@ export default defineConfig({
   site: "https://saniket-builders.github.io",
   base: "saniketgroup.com",
   image: {
-    domains: ["images.unsplash.com"]
+    domains: ["images.unsplash.com", "yashwani2000.com"]
   },
   prefetch: true,
   integrations: [tailwind(), sitemap(), compressor({ gzip: false, brotli: true })],
