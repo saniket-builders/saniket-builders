@@ -92,48 +92,47 @@ const articles: Article[] = [
   },
   {
     isRightSection: false,
-    title: "Time Scapes",
+    title: "Stylus",
     subTitle:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.",
-    img: time_scapes,
+    img: stylus,
     imgAlt:
       "Man in orange and black vest wearing white helmet holding yellow and black power tool",
   },
   {
     isRightSection: true,
-    title: "Stylus",
+    title: "Rock Shell",
     subTitle:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.",
     single: true,
-    imgOne: stylus,
-    imgOneAlt: "In progress building structure",
+    imgOne: rocks_hell,
+    imgOneAlt:"In progress building structure"
   },
-  {
-    isRightSection: false,
-    title: "Rocks Hell",
-    subTitle:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.",
-    img: rocks_hell,
-    imgAlt:"In progress building structure"
-  },
-  {
-    isRightSection: true,
-    title: "Omkar Swarup",
-    subTitle:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.",
-    single: false,
-    imgOne: omkar_swarup_p2,
-    imgOneAlt: "In progress building structure",
-    imgTwo: omkar_swarup_p2,
-    imgTwoAlt: "In progress building structure",
 
-  },
   {
     isRightSection: false,
     title: "Kamleshwari Park",
     subTitle:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.",
     img: kamleshwari_park,
+    imgAlt: "In progress building structure",
+  },
+  {
+    isRightSection: true,
+    title: "Omkar Swarup",
+    subTitle:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.",
+    single: true,
+    imgOne: omkar_swarup_p2,
+    imgOneAlt: "In progress building structure",
+
+  },
+  {
+    isRightSection: false,
+    title: "Anantham",
+    subTitle:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.",
+    img: anantam,
     imgAlt: "In progress building structure",
   },
   {
@@ -147,29 +146,14 @@ const articles: Article[] = [
   },
   {
     isRightSection: false,
-    title: "Kamleshwari Park",
-    subTitle:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.",
-    img: kamleshwari_park,
-    imgAlt: "In progress building structure",
-  },
-  {
-    isRightSection: true,
     title: "Anand Dham",
     subTitle:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.",
     single: true,
-    imgOne: anand_dham,
-    imgOneAlt: "In progress building structure",
-  },
-  {
-    isRightSection: false,
-    title: "Anantham",
-    subTitle:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.",
-    img: anantam,
+    img: anand_dham,
     imgAlt: "In progress building structure",
   },
+
   {
     isRightSection: true,
     title: "Balark Arcadia",
@@ -185,11 +169,9 @@ const articles: Article[] = [
 <MainLayout title="Saniket Builders">
   <!--MainSection is the introductory section of the page, it also contains a CTA button-->
   <MainSection
-    title="Uniting Expertise with Your Vision"
-    subTitle="Lorem Impsum"
-    btnExists={true}
-    btnTitle="Check out our website"
-    btnURL="#"
+    title="Completed and Ongoing Projects"
+    subTitle=""
+    btnExists={false}
   />
   <!-- RightSection and LeftSection contain details about various services along with pertinent imagery.
   They alternate for variety in design.
