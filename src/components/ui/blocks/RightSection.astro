@@ -2,8 +2,9 @@
 // Import the required modules
 import { Image } from "astro:assets";
 import PrimaryCTA from "../buttons/PrimaryCTA.astro";
+import Tag from "../cards/Tag.astro";
 // Extract properties from Astro.props
-const {
+let {
   title,
   subTitle,
   btnExists,
@@ -14,6 +15,9 @@ const {
   imgOneAlt,
   imgTwo,
   imgTwoAlt,
+  tags,
+  location,
+  url
 } = Astro.props;
 // Define TypeScript interface for the properties
 interface Props {
@@ -27,9 +31,13 @@ interface Props {
   imgOneAlt?: any;
   imgTwo?: any;
   imgTwoAlt?: any;
+  tags?: any;
+  location?: string;
+  url?: string;
 }
 ---
 <!-- Root section of the component -->
+
 <section
   class="mx-auto max-w-[85rem] items-center gap-16 px-4 py-10 sm:px-6 lg:grid lg:grid-cols-2 lg:px-8 lg:py-14 2xl:max-w-full"
 >
@@ -41,13 +49,32 @@ interface Props {
       {title}
     </h2>
     <!-- Subtitle of the section -->
+
+    {tags ? (
+      <div class="flex flex-wrap gap-2 mb-4">
+        {tags.map((tag: any) => (
+          <!--<span-->
+          <!--  class={"inline-block text-white text-sm py-2 px-4 rounded-full dark:text-white backdrop-blur dark:backdrop-blur bg-white/50"}-->
+          <!--  style={`background-color: ${tag.color1}; opacity: 1.0; backdrop-filter: blur(10px);`}-->
+          <!--&gt;-->
+          <!--  {tag.tag}-->
+          <!--</span>-->
+          <Tag tag={tag.tag} bg_color={tag.color1} />
+        ))}
+      </div>
+    ) : null}
+
+    {location ? (
+      <div class="flex flex-wrap gap-2 mb-4">
+        <Tag tag={location} url={url} />
+      </div>) : null
+    }
+
     <p
       class="mb-4 max-w-prose text-pretty font-light text-neutral-600 dark:text-neutral-400 sm:text-lg"
     >
       {subTitle}
     </p>
-    <!-- Conditional rendering of the Primary Call-To-Action button if 'btnExists' is true -->
-    {btnExists ? <PrimaryCTA title={btnTitle} url={btnURL} /> : null}
   </div>
   <!-- Conditionally render one or two images based on 'single' property -->
   {

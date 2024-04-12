@@ -21,15 +21,6 @@ import anand_dham from "../images/anand-dham.jpg";
 import anantam from "../images/anantam.jpg";
 import balark_arcadia from "../images/balark-arcadia.jpg";
 
-import blueprints from "../images/blueprints-image.avif";
-import personWorking from "../images/person-working.avif";
-import beforeAfter from "../images/before-after.avif";
-import constructionWorkers from "../images/construction-workers.avif";
-import aerialView from "../images/aerial-view.avif";
-import usingTools from "../images/using-tools.avif";
-import progressBuilding from "../images/progress-building.avif";
-import underConstruction from "../images/under-construction.avif";
-
 interface Article {
   isRightSection: boolean;
   title: string;
@@ -44,6 +35,9 @@ interface Article {
   imgOneAlt?: string;
   imgTwo?: any;
   imgTwoAlt?: string;
+  tags?: any;
+  location?: string;
+  url?: string;
 }
 
 const articles: Article[] = [
@@ -51,23 +45,45 @@ const articles: Article[] = [
     isRightSection: true,
     title: "Saniket House",
     subTitle:
-      "Lane - 6, Prabhat Road, Pune - 411004",
+      "Prabhat Road,  Pune\n" +
+      "A luxury project located in a green and lush lane\n" +
+      "Features: Extensive planning with attention to detail for customer satisfaction\n" +
+      "Composition: 5 apartments in total,\n" +
+      "one apartment per floor\n",
     single: true,
     imgOne: saniket_house,
-    imgOneAlt: "Blueprints and digital tablet with construction plans."},
+    imgOneAlt: "Blueprints and digital tablet with construction plans.",
+    tags: [{tag:"Luxury", color1:"#0000ff", color2: "#0000ff"},
+           {tag:"Green Lane", color1:"#ff0000", color2: "#ff0000"},
+           {tag:"Pokemon", color1:"#00ff00"}
+          ],
+    location: "Prabhat Road, Pune",
+    url: "https://g.co/kgs/Jy4EQYd",
+  },
   {
     isRightSection: false,
     title: "Kala Basant",
-    subTitle:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.",
+    subTitle: "3 & 4 BHK LUXURIOUS HOMES \n" +
+      "@ PRABHAT ROAD\n" +
+      "Introducing \"Kala Basant\" – Luxurious 3 & 4 BHK Apartments on Prabhat Road. Discover \"Kala Basant,\" an upscale residential project in the green oasis of Prabhat Road. With 25 floors offering a 4-side open city view, this development boasts top-class amenities including a grand lobby, children's play area, gym, and leisure room.\n" +
+      "Prime Location: Situated in Prabhat Road, Kala Basant offers easy access to essential services and entertainment while providing a serene retreat from the city's hustle and bustle. Spectacular Views: Enjoy panoramic city views from every angle of these thoughtfully designed apartments.\n" +
+      "Luxury Living: Experience elegance and functionality in 3 & 4 BHK apartments designed for maximum comfort, natural light, \n" +
+      "and ventilation.\n" +
+      "Green Oasis: Nestled in lush green surroundings, Kala Basant offers a tranquil escape for nature enthusiasts.\n" +
+      "\"Kala Basant\" is your gateway to luxurious living in Pune's heart, blending convenience, elegance, and nature's beauty into one remarkable package.\n",
     img: kala_basant,
     imgAlt: "Construction site before and after",
   },
   {
     isRightSection: true,
     title: "Sunwinds",
-    subTitle:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.",
+    subTitle: "Siddharth Nagar, Pune\n" +
+      "Developer: Saniket Builders\n" +
+      "Type: Residential\n" +
+      "Description: Sunwinds offers apartments with contemporary architecture & features aimed at\n" +
+      "providing comfortable living.\n" +
+      "Apartment Types: 1 BHK, 2 BHK, and 3 BHK\n" +
+      "Total Built-Up Area: Approximately 135,000 Sq.ft.\n",
     single: true,
     imgOne: sunwinds,
     imgOneAlt: "sunwinds",
@@ -75,8 +91,12 @@ const articles: Article[] = [
   {
     isRightSection: false,
     title: "Time Scapes",
-    subTitle:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.",
+    subTitle: "Erandawane, Pune\n" +
+      "Location: CTS No.5/25, Final Plot No. 7/25,\n" +
+      "Near Jain Temple,\n" +
+      "Number of Flats: 10\n" +
+      "Status: Handed over to the clients\n" +
+      "Total Built-Up Area: Approximately 15,000 Sq.ft.\n",
     img: time_scapes,
     imgAlt:
       "Man in orange and black vest wearing white helmet holding yellow and black power tool",
@@ -84,8 +104,8 @@ const articles: Article[] = [
   {
     isRightSection: true,
     title: "Waterways",
-    subTitle:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.",
+    subTitle: "Nashik\n" +
+      "Type: Plotting project\n",
     single: true,
     imgOne: waterways,
     imgOneAlt: "In progress building structure",
@@ -93,8 +113,11 @@ const articles: Article[] = [
   {
     isRightSection: false,
     title: "Stylus",
-    subTitle:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.",
+    subTitle: "Balewadi, Pune\n" +
+      "Location: Survey No.33, Behind MITCON College\n" +
+      "Number of Flats: 22\n" +
+      "Status: Handed over to the clients\n" +
+      "Total Built-Up Area: Approximately 23,000 Sq.ft.\n",
     img: stylus,
     imgAlt:
       "Man in orange and black vest wearing white helmet holding yellow and black power tool",
@@ -102,8 +125,11 @@ const articles: Article[] = [
   {
     isRightSection: true,
     title: "Rock Shell",
-    subTitle:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.",
+    subTitle: "Trimbakeshwar (Nashik)\n" +
+      "Type: Plotting project\n" +
+      "Description: Rockshell is situated in a lush and green valley, spanning more than 40 \n" +
+      "acres. It offers more than 40 amenities and a beautiful landscape, providing residents \n" +
+      "with a unique opportunity to escape the hustle of daily city life and enjoy the tranquility of nature.\n",
     single: true,
     imgOne: rocks_hell,
     imgOneAlt:"In progress building structure"
@@ -112,16 +138,27 @@ const articles: Article[] = [
   {
     isRightSection: false,
     title: "Kamleshwari Park",
-    subTitle:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.",
+    subTitle: "Parvati Paytha, Pune\n" +
+      "Type: Residential\n" +
+      "Description: Kamleshwari Park is a \n" +
+      "thoughtfully planned project equipped with all \n" +
+      "amenities for comfortable living.\n" +
+      "Located in one of the most sought-after\n" +
+      "pin codes, 411001\n" +
+      "Apartment Configurations: 2BHK & 3BHK\n" +
+      "Total Units: 25\n",
     img: kamleshwari_park,
     imgAlt: "In progress building structure",
   },
   {
     isRightSection: true,
     title: "Omkar Swarup",
-    subTitle:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.",
+    subTitle: "2 & 3 BHK HOMES\n" +
+      "@ PUNE-SATARA HIGHWAY\n" +
+      "\"Omkar Swarup Phase II\" is a dream come true for all those \n" +
+      "who wish to own their dream home, with all modern amenities. It is a \n" +
+      "residential 2/3 BHK project of well-planned, spacious, luxurious, and \n" +
+      "affordable houses that are located on the Pune-Satara Highway.\n",
     single: true,
     imgOne: omkar_swarup_p2,
     imgOneAlt: "In progress building structure",
@@ -130,8 +167,12 @@ const articles: Article[] = [
   {
     isRightSection: false,
     title: "Anantham",
-    subTitle:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.",
+    subTitle: "2, 2.5, 3, 4 BHK HOMES @ BAVDHAN\n" +
+      "Residential & Commercial spaces of over 24,50,000 sq. ft.\n" +
+      "Saniket Group introduces an expansive development in the heart of Bavdhan, spanning over 23,00,000 sq. ft., set across vast acres. This project offers an array of meticulously crafted residential and commercial spaces designed to redefine the concept of premium living.Nestled within ample green spaces, our project is a testament to luxury and comfort, offering a lifestyle beyond the ordinary.\n" +
+      "The development boasts a central podium that hosts a myriad of lifestyle amenities, encouraging residents to relish vast open spaces, moving beyond the constraints of typical city living. Our project is not only a epitome of luxury but also Smart, Sustainable, and Secure, accredited with an IGBC standard rating. It embodies excellence in design, construction, and execution.\n" +
+      "Managed by a leading grade A Project Management Consultancy in India, every stage is meticulously monitored, ensuring superior quality and value for our customers. The project's highlights include an extensive array of world-class amenities such as a sophisticated swimming pool complex, expansive exercise and yoga rooms, a well-equipped gym, vast podium areas, and dedicated children's play zones. Each construction detail is rigorously examined by our quality department, guaranteeing the highest standards and customer satisfaction.\n" +
+      "Saniket Group envisions a vibrant community, offering an extensive range of services and facilities to enrich and empower lives. This project stands out as one of the largest developments in Bavdhan, providing a comprehensive and holistic living experience for our esteemed customers.\n",
     img: anantam,
     imgAlt: "In progress building structure",
   },
@@ -139,7 +180,10 @@ const articles: Article[] = [
     isRightSection: true,
     title: "The Rising",
     subTitle:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.",
+      "Residential & commercial spaces spanning over 900,000 sq. ft.\n" +
+      "Spread across ample acres, Saniket Group presents premium life spaces to maximize your world–your life and comfort. With abounding open space and a central podium which hosts diverse lifestyle amenities, get ready to stretch out far beyond the usual city norms. This project is Smart, Sustainable, and Secure – with a IGBC Gold standard rating. With world class amenities like swimming pool complex, exercise yards, one kilometer happy street, pets park, club house, party lawn, yoga room, gym room, children’s play area and many more.\n" +
+      "The project is being managed by JLL one of the biggest grade A Project management consultancy in India. Each detail of our contractors execution is supervised and checked for quality by our quality department making sure each customer gets the highest value for money.\n" +
+      "Saniket Group has planned a broad range of thoughtful community offerings to empower your life like never before. Here, you get to make the best of a children's creche and a community clubhouse spread over 10,000 sq ft. We also enable timely attention to any family emergency with an on-premise emergency Care Centre with a cardiac ambulance serviced by a national hospital chain.\n",
     single: true,
     imgOne: the_rising,
     imgOneAlt: "In progress building structure",
@@ -147,8 +191,12 @@ const articles: Article[] = [
   {
     isRightSection: false,
     title: "Anand Dham",
-    subTitle:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo.",
+    subTitle:"3 & 4 BHK LUXURIOUS HOMES \n" +
+      "@ LAW COLLEGE ROAD\n" +
+      "\"Anand Dham\" stands as an epitome of opulence and sophistication on Law College Road, Pune. This luxurious residential complex, comprising exquisite 3-4 BHK apartments, is meticulously designed to redefine the standards of luxury living. Each residence at \"Anand Dham\" exudes elegance and grandeur, reflecting a harmonious blend of contemporary design and timeless architecture.\n" +
+      "Beyond the lavish interiors, residents are treated to an array of world-class amenities that cater to every aspect of modern living. From state-of-the-art fitness centers and swimming pools to lush landscaped gardens and recreational spaces, \"Anand Dham\" offers an unparalleled lifestyle experience.\n" +
+      "Moreover, its strategic location on Law College Road provides residents with the convenience of urban living while being nestled in a serene and tranquil environment. With easy access to key landmarks, educational institutions, healthcare facilities, and entertainment hubs, residents truly enjoy the best of both worlds at \"Anand Dham.\"\n" +
+      "In essence, \"Anand Dham\" sets a new benchmark for luxury living, promising its residents a life of utmost comfort, convenience, and sophistication.\n",
     single: true,
     img: anand_dham,
     imgAlt: "In progress building structure",
@@ -195,6 +243,9 @@ const articles: Article[] = [
           btnExists={article.btnExists}
           btnTitle={article.btnTitle}
           btnURL={article.btnURL}
+          tags={article.tags}
+          location={article.location},
+          url={article.url}
         />
       ) : (
         <LeftSection
@@ -212,21 +263,17 @@ const articles: Article[] = [
   <!--FeaturesStats section showcases essential stats valuable to users-->
   <FeaturesStats
     title="By the Numbers"
-    subTitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus feugiat, molestie ipsum et, consequat nibh. Etiam non elit dui. Nullam vel eros sit amet arcu vestibulum accumsan in in leo."
-    mainStatTitle="99%"
-    mainStatSubTitle="Satisfaction Rate"
+    subTitle="Saniket Builders aims to surpass 1 crore sq.ft in construction projects over the next two years."
+    mainStatTitle="10 Lakh sqft +"
+    mainStatSubTitle="10+ Completed Projects"
     stats={[
       {
-        stat: "100%",
-        description: "project completion rate",
+        stat: "35 Lakh sqft +",
+        description: "4+ Ongoing Projects",
       },
       {
-        stat: "5,000+",
-        description: "successful projects completed",
-      },
-      {
-        stat: "85%",
-        description: "growth year-over-year",
+        stat: "80 Lakh sqft +",
+        description: "4+ Upcoming Projects",
       },
     ]}
   />

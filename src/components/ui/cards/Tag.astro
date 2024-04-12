@@ -1,0 +1,29 @@
+---
+const {
+  tag,
+  bg_color,
+  url
+} = Astro.props;
+// Define TypeScript interface for the properties
+interface Props {
+  tag: string;
+  bg_color?: string;
+  url?: string;
+}
+---
+{url ? (
+<a class="inline-flex items-center bg-green-500 text-white text-sm py-2 px-4 rounded-full whitespace-nowrap"
+   href={url}>
+  <svg class="w-4 h-4 mr-2 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">
+    <path d="M10 20s8-8 8-12a8 8 0 10-16 0c0 4 8 12 8 12zM10 5a3 3 0 110 6 3 3 0 010-6z" />
+  </svg>
+  {tag}
+</a>
+  ) : (
+<span
+  class={`inline-block text-white text-sm py-2 px-4 rounded-full dark:text-white backdrop-blur dark:backdrop-blur bg-[${bg_color}]/50`}
+  style={`background-color: ${bg_color}`}
+>
+  {tag}
+</span>
+  )}
