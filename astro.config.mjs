@@ -5,8 +5,8 @@ import compressor from "astro-compressor";
 // https://astro.build/config
 export default defineConfig({
   // https://docs.astro.build/en/guides/images/#authorizing-remote-images
-  site: "https://saniket-builders.github.io",
-  base: "saniketgroup.com",
+  site: "https://saniketgroup.com",
+  base: "/",
   image: {
     domains: ["images.unsplash.com", "yashwani2000.com"]
   },
