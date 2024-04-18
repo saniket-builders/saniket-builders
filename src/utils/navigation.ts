@@ -4,7 +4,7 @@ export const navBarLinks = [
   { name: "Technical Publications", url: "https://technicalpublications.in/" },
   { name: "Sanket Builders", url: "/saniket-builders" },
   { name: "Champ Endurance", url: "https://www.champendurance.com" },
-  { name: "Loha Foundation", url: "/loha-foundation" },
+  { name: "Loha Foundation", url: "/" },
 
 ];
 // An array of links for footer
