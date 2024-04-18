@@ -10,7 +10,7 @@ const defaultProps = {
   structuredData: {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "SaniketGroup",
+    "name": "Saniket Group",
     "url": "https://saniketgroup.com/",
     "description": "Saniket Group - Description of the website goes here.",
   },
@@ -22,8 +22,8 @@ const defaultProps = {
 const { meta = defaultProps.meta, structuredData = defaultProps.structuredData } = Astro.props;
 
 // Define the metadata for your website and individual pages
-const title: string = "SaniketGroup"; // Set default title
-const ogTitle: string = "SaniketGroup"; // Set the Open Graph title
+const title: string = "Saniket Group"; // Set default title
+const ogTitle: string = "Saniket Group"; // Set the Open Graph title
 const author: string = "Yash Wani"; // Set the author's name
 const ogDescription: string =
   "Description"; // Set the Open Graph description
@@ -67,15 +67,15 @@ const socialImage: string = `${Astro.site}/social.png`; // Set the path for the 
 <!-- meta name="twitter:image" content={socialImage} / -->
 
 <!-- Links to the webmanifest and sitemap -->
-<link rel="manifest" href="/saniketgroup.com/public/manifest.webmanifest" />
+<link rel="manifest" href="/manifest.webmanifest" />
 <!-- https://docs.astro.build/en/guides/integrations-guide/sitemap/ -->
-<link rel="sitemap" href="/saniketgroup.com/public/sitemap-index.xml" />
+<link rel="sitemap" href="/sitemap-index.xml" />
 
 <!-- Links for favicons -->
-<link href="/saniketgroup.com/public/favicon.ico" rel="icon" sizes="any" type="image/x-icon" />
-<link href="/saniketgroup.com/public/icon.svg" rel="icon" type="image/svg+xml" sizes="any" />
+<link href="/favicon.ico" rel="icon" sizes="any" type="image/x-icon" />
+<link href="/icon.svg" rel="icon" type="image/svg+xml" sizes="any" />
 <meta name="mobile-web-app-capable" content="yes" />
-<link href="/saniketgroup.com/public/apple-touch-icon.png" rel="apple-touch-icon" />
-<link href="/saniketgroup.com/public/apple-touch-icon.png" rel="shortcut icon" />
+<link href="/apple-touch-icon.png" rel="apple-touch-icon" />
+<link href="/apple-touch-icon.png" rel="shortcut icon" />
 <!-- Set theme color -->
 <meta name="theme-color" content="#facc15" />
