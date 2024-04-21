@@ -2,7 +2,7 @@
 export const navBarLinks = [
   { name: "Home", url: "/" },
   { name: "Technical Publications", url: "https://technicalpublications.in/" },
-  { name: "Sanket Builders", url: "/saniket-builders" },
+  { name: "Saniket Builders", url: "/saniket-builders" },
   { name: "Champ Endurance", url: "https://www.champendurance.com" },
   { name: "Loha Foundation", url: "/" },
 
